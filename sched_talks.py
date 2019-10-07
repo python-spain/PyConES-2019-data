@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 import json
 import requests
 from tqdm import tqdm
@@ -63,7 +64,8 @@ class SchedTalks(object):
                 ])
             
             talks_content += talk_md + '\n'
-
+        
+        talks_content += f"\n_Automatically created with :hearts: at {datetime.now().strftime('%Y/%m/%d %H:%m')}_"
         return talks_content
      
     @property

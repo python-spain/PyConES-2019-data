@@ -4,6 +4,7 @@ import json
 import requests
 from tqdm import tqdm
 from slugify import slugify
+from optparse import OptionParser
 
 def _mkdir(dir):
     try:
@@ -145,5 +146,18 @@ class SchedTalks(object):
 
 
 if __name__ == "__main__":
-    talks = SchedTalks(output_dir='files')
+    parser = OptionParser()
+    parser.add_option("-o", "--output-dir", default="files",
+                      dest="output_dir", help="attachments output directory", metavar="DIR")
+
+    parser.add_option("-t", "--token",
+                      dest="api_key", help="sched.com API key/token", metavar="TOKEN")
+
+    (options, args) = parser.parse_args()
+
+    # Clear empty api_token (to initialize reaching it from env vars)
+    if not options.api_key:
+        del options.api_key
+
+    talks = SchedTalks(**vars(options))
     talks.export_md(file_name='README.md')

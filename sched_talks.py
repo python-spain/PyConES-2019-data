@@ -56,6 +56,11 @@ class SchedTalks(object):
             talk_md += f"  - :snake: _{speakers_formated}_\n"
             talk_md += f"  - :alarm_clock:  {talk.get('event_start')}\n"
 
+            description = talk.get('description')
+            if description:
+                description = description.replace("\n", "").replace("\r", "")
+                talk_md += f"  - :clipboard:  {description}\n"
+
             attachments = talk.get('attachments')
             if attachments:
                 talk_md += f"  - :open_file_folder: Attachments\n"
@@ -81,7 +86,7 @@ class SchedTalks(object):
         """Load talks file and process it downloading associated files"""
 
         talks_response = requests.get(
-            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start'
+            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start,description'
         )
 
         if talks_response:
@@ -124,11 +129,11 @@ class SchedTalks(object):
                 f'{slugify(cleaned_file_name)}{file_extension}',
             )
 
-            get_response = requests.get(file_url, stream=True)
-            with open(file_path_local, 'wb') as f:
-                for chunk in get_response.iter_content(chunk_size=1024):
-                    if chunk:
-                        f.write(chunk)
+            # get_response = requests.get(file_url, stream=True)
+            # with open(file_path_local, 'wb') as f:
+            #     for chunk in get_response.iter_content(chunk_size=1024):
+            #         if chunk:
+            #             f.write(chunk)
 
             result.append({
                 'file_url': file_url,

@@ -11,4 +11,17 @@ Just get your sched.com API key and execute it:
 python sched_talks.py -o files -t $SCHED_API_KEY
 ```
 
+## Help
+
+```
+$ python sched_talks.py --help
+Usage: sched_talks.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -o DIR, --output-dir=DIR
+                        attachments output directory
+  -t TOKEN, --token=TOKEN
+                        sched.com API key/token
+
 ```

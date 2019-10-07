@@ -66,8 +66,13 @@ class SchedTalks(object):
 
     def _get_talks(self):
         """Load talks file and process it downloading associated files"""
-        with open('talks.json') as f:
-            self.json = json.load(f)
+
+        talks_response = requests.get(
+            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start'
+        )
+
+        if talks_response:
+            self.json = json.loads(talks_response.content)
 
         for talk in tqdm(self.json, desc='Processing talks'):
             # Process attachments

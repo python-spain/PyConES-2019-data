@@ -37,7 +37,10 @@ class SchedTalks(object):
         based on the speaker definition.
         """
 
-        talks_content = ''
+        talks_content = '# PyConES 2019 Conferences and their related stuff\n'
+        talks_content += 'It contains all available talks, their attachments and other interesting information.\n'
+        talks_content += '## Talks\n'
+
         for talk in tqdm(self.talks, desc='Converting to MD'):
             speakers = [speaker.get('name', 'Unknown')
                         for speaker in talk.get('speakers', [])]

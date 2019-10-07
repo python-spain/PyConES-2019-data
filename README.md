@@ -1,3 +1,6 @@
+# PyConES 2019 Conferences and their related stuff
+It contains all available talks, their attachments and other interesting information.
+## Talks
 ### Machine Learning for Bayesian Optimization and Stochastic Dynamic Systems
   - :snake: _Antonio del Rio Chanona_
   - :alarm_clock:  2019-10-04 15:30

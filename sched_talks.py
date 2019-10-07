@@ -2,6 +2,13 @@ import os
 import json
 import requests
 from tqdm import tqdm
+from slugify import slugify
+
+def _mkdir(dir):
+    try:
+        os.mkdir(dir)
+    except FileExistsError:
+        pass
 
 class SchedTalks(object):
     __slots__ = ['json', 'talks', 'settings']
@@ -17,10 +24,7 @@ class SchedTalks(object):
 
         self.talks = []
         
-        try:
-            os.mkdir(self.output_dir)
-        except FileExistsError:
-            pass
+        _mkdir(self.output_dir)
 
         self._get_talks()
 
@@ -81,8 +85,16 @@ class SchedTalks(object):
             # Process attachments
             attachments = talk.get('files', [])
             if attachments:
+                # Prepare isolated talk paths
+                talk_path = os.path.join(
+                    self.output_dir,
+                    slugify(talk.get('name'))
+                )
+                _mkdir(talk_path)
+
                 attachments_resolved = self._download_attachments(
-                    attachments
+                    attachments,
+                    destination_path=talk_path,
                 )
                 talk['attachments'] = attachments_resolved
 
@@ -96,10 +108,13 @@ class SchedTalks(object):
             file_url = attachment.get('path')
             file_name = attachment.get('name')
 
+            # Clean file name with slugify strategy
+            cleaned_file_name, file_extension = os.path.splitext(file_name)
             file_path_local = os.path.join(
                 destination_path or self.output_dir,
-                file_name
+                f'{slugify(cleaned_file_name)}{file_extension}',
             )
+
             get_response = requests.get(file_url, stream=True)
             with open(file_path_local, 'wb') as f:
                 for chunk in get_response.iter_content(chunk_size=1024):

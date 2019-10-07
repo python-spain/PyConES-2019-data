@@ -1,0 +1,102 @@
+
+- **'Machine Learning for Bayesian Optimization and Stochastic Dynamic Systems'** by _Antonio del Rio Chanona_
+- **'Taller de Introducción a Python'** by _Cristóbal Contreras Rubio, Antònia Tugores, Biel Frontera, Raúl Cumplido_
+- **'Cooking recipes API using Django Rest Framework'** by _Israel Saeta Pérez_
+  - [Cooking Recipes API with DRF - Israel Saeta Pérez.pdf](files/cooking-recipes-api-using-django-rest-framework/cooking-recipes-api-with-drf-israel-saeta-perez.pdf)
+- **'Ya sé Python ¿Ahora qué?'** by _Miguel Sánchez de León Peque_
+- **'¿Cómo enriquecer y dar más valor a mis datos? Análisis espacial y Open Data con Python'** by _Ángel Marqués Mateu, Benjamin Arroquia Cuadros_
+- **'APERTURA PyConES 2019'** by _Organización_
+- **'Keynote'** by _Safia Abdalla_
+- **'Python para calentar tu casa'** by _Héctor Pablos López_
+  - [pycones_2019_reduced2.pdf](files/python-para-calentar-tu-casa/pycones-2019-reduced2.pdf)
+- **'Fragmentar y dearticular redes de crimen. Topología y debilidad de redes'** by _Juan Carlos González-Avella_
+- **'Big data en live coding'** by _Guillem Borrell_
+  - [Big data en Live Coding.pdf](files/big-data-en-live-coding/big-data-en-live-coding.pdf)
+- **'Microservice and Serverless Applications with Python: Challenges and opportunities'** by _Nilo Ney Coutinho Menezes_
+- **'Sistemas de recomendación con surprise'** by _Antonio David Pérez Morales, Rafael Haro Ramos_
+  - [Sistemas de recomendación con Surprise.pdf](files/sistemas-de-recomendacion-con-surprise/sistemas-de-recomendacion-con-surprise.pdf)
+  - [pycones_surprise_algorithms.ipynb](files/sistemas-de-recomendacion-con-surprise/pycones-surprise-algorithms.ipynb)
+- **'Organizando chistes con NLP'** by _Julio Martínez_
+- **'Tamarco: un framework de microservicios'** by _José Melero Fernández_
+- **'Exceptional exceptions'** by _Mario Corchero_
+- **'Optimización de una red de evaporadores industriales'** by _María P. Marcos_
+  - [Optimizacion_Industrial.pptx](files/optimizacion-de-una-red-de-evaporadores-industriales/optimizacion-industrial.pptx)
+- **'Py2hollywood - usando Python en una producción de películas de animación -Patrocinada'** by _Alberto Santos, ILION ANIMATION STUDIOS_
+- **'Drivers en Python o cómo encender luces de colores en un teclado cuando recibo un mail'** by _Javier Torres_
+- **'Service Oriented Arquitecture with PySOA'** by _Jorge Barata_
+- **'Chatops 101 con opsdroid'** by _Àngel Fernández_
+  - [slides.pdf](files/chatops-101-con-opsdroid/slides.pdf)
+- **'¿Podemos predecir el Síndrome Visual informático mediante técnicas de Machine Learning?'** by _Rubén Crespo Cano_
+- **'Microservicios altamente paralelos para todos'** by _Alberto Fernandez Valiente_
+- **'qVista: sistema de información territorial del Ayto. de BCN desarrollado en PyQGis'** by _Jordi Cebrian, Noemi Rodríguez_
+- **'Dynamic Optimization and Process Control in Python'** by _Francisco J. Navarro-Brull_
+- **'Securizando nuestro código python'** by _Victor Torre_
+- **'Desarrollo industrial de sistemas embebidos con Python/Django y Raspberry Pi'** by _José A. Rocamonde_
+- **'f-strings: A format system to rule them all'** by _Juan Diego Godoy Robles_
+- **'Nariz electrónica para la detección de defectos del café con Python'** by _Katerine Perdomo Moreno_
+- **'When code is not enough'** by _Juan Ernesto Biondi Perez_
+  - [PyCon2019.pdf](files/when-code-is-not-enough/pycon2019.pdf)
+  - [PyCon2019.odp](files/when-code-is-not-enough/pycon2019.odp)
+  - [PyCon2019.pptx](files/when-code-is-not-enough/pycon2019.pptx)
+- **'Odisea en el lodo: La divertida historia sobre heredar un proyecto legacy con gran tech debt y estar alone'** by _Miguel Jiménez García_
+  - [-PyConES19 Sharing- 2017 Odisea en el lodo.pdf](files/odisea-en-el-lodo-la-divertida-historia-sobre-heredar-un-proyecto-legacy-con-gran-tech-debt-y-estar-alone/pycones19-sharing-2017-odisea-en-el-lodo.pdf)
+- **'Mom, I want to be a data artist'** by _Alberto Romeu_
+- **'Making a galaxy with python: merits and pitfalls in probabilistic programming'** by _Vital Fernández_
+  - [MakingAGalaxyWithPython_Vital_PyConEs19.pdf](files/making-a-galaxy-with-python-merits-and-pitfalls-in-probabilistic-programming/makingagalaxywithpython-vital-pycones19.pdf)
+  - [Vital_MakingAGalaxyWithPython_PyConEs19_v2.pdf](files/making-a-galaxy-with-python-merits-and-pitfalls-in-probabilistic-programming/vital-makingagalaxywithpython-pycones19-v2.pdf)
+- **'Using PyPI and docopt to create and share command lines'** by _tony aldon_
+- **'Objetos hashables'** by _Victor Terrón_
+- **'Creando un Deep-bot from scratch'** by _Javier Jiménez del Peso., Edgar Pérez Sampedro_
+  - [slides-creando-un-deep-bot-from-scratch_final.html](files/creando-un-deep-bot-from-scratch/slides-creando-un-deep-bot-from-scratch-final.html)
+- **'Aprendiendo cómo aprenden las máquinas'** by _Jordi Contestí, Francisco Correoso, Guillem Duran, Juan Carlos González, Antònia Tugores_
+- **'Usando Flask en el mundo real: extensiones y buenas prácticas'** by _Juan José Lozano Gómez_
+  - [PyConES19 Usando Flask en el mundo real.pdf](files/usando-flask-en-el-mundo-real-extensiones-y-buenas-practicas/pycones19-usando-flask-en-el-mundo-real.pdf)
+- **'assertTrue('Testing en Machine Learning')'** by _Beatriz Gómez_
+- **'Porque una imagen vale más que mil datos. El poder de los gráficos en Python'** by _María Ángeles Rodriguez_
+- **'¡Socorro, mi hijo quiere ser hacker!'** by _Virginia Tovar y Jorge Brocal_
+- **'Making sense of online reviews... at cloud scale - Patrocinada'** by _TRUSTYOU_
+- **'Django Admin inside Out'** by _Rafael Soriano_
+- **'Que la generación Z no rompa tus modelos'** by _Alicia Pérez_
+  - [PyCon2019 - Fairness_Bias.pdf](files/que-la-generacion-z-no-rompa-tus-modelos/pycon2019-fairness-bias.pdf)
+- **'MI CASA: venturas y desventuras de una radioastrónoma en Python'** by _Ana Karla Díaz Rodríguez_
+  - [Mi CASA.pdf](files/mi-casa-venturas-y-desventuras-de-una-radioastronoma-en-python/mi-casa.pdf)
+- **'Building nteract - Patrocinada'** by _Safia Abdalla, MICROSOFT_
+- **'Analiza la salud de tu proyecto con GrimoireLab y Python'** by _Valerio Cosentino_
+- **'A practical domain-driven design approach to Nameko microservices'** by _Julio Vicente Trigo Guijarro_
+- **'Patrocinada'** by _EVENTBRITE_
+- **'Reconocimiento del habla en Python'** by _Javier Jorge Cano_
+  - [slides_pycones_2019.pdf](files/reconocimiento-del-habla-en-python/slides-pycones-2019.pdf)
+- **'Desarrollo de Chatbots en Python: RasaNLU'** by _Rafael Haro Ramos, Antonio David Pérez_
+  - [Desarrollo de Chatbots con Rasa.pdf](files/desarrollo-de-chatbots-en-python-rasanlu/desarrollo-de-chatbots-con-rasa.pdf)
+- **'Economía del software'** by _Miguel Gonzalez Flores_
+- **'Keynote'** by _Francisco Javier Ordóñez Morales_
+- **'ASAMBLEA PYTHON ESPAÑA'** by _Juan Luis Cano_
+- **'Machine Learning para proyectos de seguridad'** by _Jose Manuel Ortega Candel_
+- **'End-to-end machine learning platform for real-time underwriting. A silicon Valley fintech perspective'** by _Hossein Ghodrati, Pablo López, Pablo Vargas_
+- **'Cómo aprovechar todos los recursos hardware para tus modelos de Reinforcement Learning'** by _Rubén García_
+- **'El Show de Truman'** by _Jimena Escobar Bermúdez_
+- **'Procesamiento distribuido con Dask para posicionamiento indoor'** by _Álvaro Arredondo, cayetano benavent, Josema Camacho_
+- **'Flow is in the air'** by _Javier Martínez Aníbarro_
+- **'El lado oscuro del Scraping en Recruiting'** by _Teresa Salazar García- Rosales_
+- **'De Daniel San a Sr. Miyagi en Python: aprendiendo mediante katas'** by _Irene Pérez Encinar_
+  - [De Daniel San a Sr. Miyagi en Python_ aprendiendo mediante katas.pdf](files/de-daniel-san-a-sr-miyagi-en-python-aprendiendo-mediante-katas/de-daniel-san-a-sr-miyagi-en-python-aprendiendo-mediante-katas.pdf)
+- **'PyRescue… How we used A/B testing to make advertising precise in Nigeria'** by _Adeshola Afolabi_
+- **'4 Frameworks Serverless para Kubernetes - Patrocinada'** by _Gustavo Marin, INTELLYGENZ_
+  - [Serverless Frameworks for Kubernetes.pdf](files/4-frameworks-serverless-para-kubernetes-patrocinada/serverless-frameworks-for-kubernetes.pdf)
+- **'Deeplearneando con Python con casos de uso de biometría - Patrocinada'** by _Alvaro Romero Diaz, Javier Blanco Cordero, ORANGE_
+- **'Ofuscación de ficheros con esteganografía'** by _Diego Silveira Madrid, Gonzalo López Valero_
+- **'Introducción al testeo con Mocks'** by _Ester Ramos Carmona_
+  - [Testing with Mocks (2).pdf](files/introduccion-al-testeo-con-mocks/testing-with-mocks-2.pdf)
+- **'Data Science for Lazy People, Automated Machine Learning - Patrocinada'** by _Juan Diego Hueltes Vega, RAVENPACK_
+  - [Data science for lazy people, Automated Machine Learning.pdf](files/data-science-for-lazy-people-automated-machine-learning-patrocinada/data-science-for-lazy-people-automated-machine-learning.pdf)
+- **'Using Python to manipulate Data in experimental mechanics: A test case in Atomic Force Microscopy Force Curve Analysis'** by _Matthew Eaton et. al._
+- **'Be a good colleague and help your Security Engineer!'** by _Adam Stevko_
+- **'Game of Patterns'** by _Vadim Santiaev_
+- **'Data Science meets Economy: how to meassure social impact from consumption data'** by _Marta Rivera Alba_
+- **'¿Cómo preparar una entrevista técnica? - Patrocinada'** by _TRAVELPERK_
+- **'Extendiendo Django para que se conecte a otras Bases de Datos: escribe tu propio backend'** by _Javier Abadia_
+- **'PyExp: A queue multiproccessing manager for experiments'** by _Carlos Perales-González_
+- **'Implementación de flujos de tareas mediante Airflow'** by _Jordi Contestí_
+  - [Jordi Contestí - Implementación de flujos de tareas mediante Airflow (2019).pdf](files/implementacion-de-flujos-de-tareas-mediante-airflow/jordi-contesti-implementacion-de-flujos-de-tareas-mediante-airflow-2019.pdf)
+- **'Keynote'** by _Pablo Galindo Salgado_
+- **'CIERRE PYCONES 2019'** by _Juan Luis Cano_

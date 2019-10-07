@@ -56,6 +56,11 @@ class SchedTalks(object):
             talk_md += f"  - :snake: _{speakers_formated}_\n"
             talk_md += f"  - :alarm_clock:  {talk.get('event_start')}\n"
 
+            description = talk.get('description')
+            if description:
+                description = description.replace("\n", "").replace("\r", "")
+                talk_md += f"  - :clipboard:  {description}\n"
+
             attachments = talk.get('attachments')
             if attachments:
                 talk_md += f"  - :open_file_folder: Attachments\n"
@@ -63,6 +68,8 @@ class SchedTalks(object):
                     f"    - :paperclip: [{attachment.get('file_name')}]({attachment.get('file_path')})\n"
                     for attachment in attachments
                 ])
+
+            talk_md += f"  - :link: [More info](https://pycones19.sched.com/event/{talk.get('id')})"
             
             talks_content += talk_md + '\n'
         
@@ -81,7 +88,7 @@ class SchedTalks(object):
         """Load talks file and process it downloading associated files"""
 
         talks_response = requests.get(
-            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start'
+            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start,description'
         )
 
         if talks_response:

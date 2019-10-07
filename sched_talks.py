@@ -68,6 +68,8 @@ class SchedTalks(object):
                     f"    - :paperclip: [{attachment.get('file_name')}]({attachment.get('file_path')})\n"
                     for attachment in attachments
                 ])
+
+            talk_md += f"  - :link: [More info](https://pycones19.sched.com/event/{talk.get('id')})"
             
             talks_content += talk_md + '\n'
         
@@ -129,11 +131,11 @@ class SchedTalks(object):
                 f'{slugify(cleaned_file_name)}{file_extension}',
             )
 
-            # get_response = requests.get(file_url, stream=True)
-            # with open(file_path_local, 'wb') as f:
-            #     for chunk in get_response.iter_content(chunk_size=1024):
-            #         if chunk:
-            #             f.write(chunk)
+            get_response = requests.get(file_url, stream=True)
+            with open(file_path_local, 'wb') as f:
+                for chunk in get_response.iter_content(chunk_size=1024):
+                    if chunk:
+                        f.write(chunk)
 
             result.append({
                 'file_url': file_url,

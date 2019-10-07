@@ -93,9 +93,6 @@ class SchedTalks(object):
             file_url = attachment.get('path')
             file_name = attachment.get('name')
 
-            if not file_name:
-                import pudb; pu.db
-
             file_path_local = os.path.join(
                 destination_path or self.output_dir,
                 file_name

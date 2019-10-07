@@ -47,16 +47,19 @@ class SchedTalks(object):
                 continue
 
             speakers_formated = ", ".join(speakers)
-            talk_md = f"\n- **'{talk.get('name')}'** by _{speakers_formated}_"
+            talk_md = f"### {talk.get('name')}\n"
+            talk_md += f"  - :snake: _{speakers_formated}_\n"
+            talk_md += f"  - :alarm_clock:  {talk.get('event_start')}\n"
 
             attachments = talk.get('attachments')
             if attachments:
+                talk_md += f"  - :open_file_folder: Attachments\n"
                 talk_md += ''.join([
-                    f'\n  - [{attachment.get("file_name")}]({attachment.get("file_path")})'
+                    f"    - :paperclip: [{attachment.get('file_name')}]({attachment.get('file_path')})\n"
                     for attachment in attachments
                 ])
             
-            talks_content += talk_md
+            talks_content += talk_md + '\n'
 
         return talks_content
      
@@ -115,11 +118,11 @@ class SchedTalks(object):
                 f'{slugify(cleaned_file_name)}{file_extension}',
             )
 
-            get_response = requests.get(file_url, stream=True)
-            with open(file_path_local, 'wb') as f:
-                for chunk in get_response.iter_content(chunk_size=1024):
-                    if chunk:
-                        f.write(chunk)
+            # get_response = requests.get(file_url, stream=True)
+            # with open(file_path_local, 'wb') as f:
+            #     for chunk in get_response.iter_content(chunk_size=1024):
+            #         if chunk:
+            #             f.write(chunk)
 
             result.append({
                 'file_url': file_url,

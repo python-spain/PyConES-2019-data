@@ -110,3 +110,7 @@ class SchedTalks(object):
         with open(file_name, "w") as readme:
             readme.write(self.as_md)
 
+
+if __name__ == "__main__":
+    talks = SchedTalks(output_dir='files')
+    talks.export_md(file_name='README.md')

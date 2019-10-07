@@ -4,6 +4,12 @@ import requests
 from tqdm import tqdm
 from slugify import slugify
 
+def _mkdir(dir):
+    try:
+        os.mkdir(dir)
+    except FileExistsError:
+        pass
+
 class SchedTalks(object):
     __slots__ = ['json', 'talks', 'settings']
 
@@ -18,10 +24,7 @@ class SchedTalks(object):
 
         self.talks = []
         
-        try:
-            os.mkdir(self.output_dir)
-        except FileExistsError:
-            pass
+        _mkdir(self.output_dir)
 
         self._get_talks()
 
@@ -82,8 +85,16 @@ class SchedTalks(object):
             # Process attachments
             attachments = talk.get('files', [])
             if attachments:
+                # Prepare isolated talk paths
+                talk_path = os.path.join(
+                    self.output_dir,
+                    slugify(talk.get('name'))
+                )
+                _mkdir(talk_path)
+
                 attachments_resolved = self._download_attachments(
-                    attachments
+                    attachments,
+                    destination_path=talk_path,
                 )
                 talk['attachments'] = attachments_resolved
 

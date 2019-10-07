@@ -1,6 +1,7 @@
+import os
 class SchedTalks(object):
     def __init__(self, **kwargs):
-        """Load settings"""
+        """Load settings and prepare paths"""
 
         self.settings = {
             'output_dir': 'files',
@@ -8,4 +9,10 @@ class SchedTalks(object):
         }
 
         self.talks = []
-    pass
+        
+        try:
+            os.mkdir(self.output_dir)
+        except FileExistsError:
+            pass
+
+

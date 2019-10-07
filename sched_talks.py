@@ -11,6 +11,7 @@ class SchedTalks(object):
 
         self.settings = {
             'output_dir': 'files',
+            'api_key': os.environ.get('SCHED_API_KEY', os.environ.get('SCHED_KEY')),
             **kwargs,
         }
 

@@ -103,3 +103,10 @@ class SchedTalks(object):
             })
 
         return result
+
+    def export_md(self, file_name="README.md"):
+        """Export as md file"""
+
+        with open(file_name, "w") as readme:
+            readme.write(self.as_md)
+

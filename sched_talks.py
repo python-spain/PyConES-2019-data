@@ -1,5 +1,11 @@
 import os
+import json
+import requests
+from tqdm import tqdm
+
 class SchedTalks(object):
+    __slots__ = ['json', 'talks', 'settings']
+
     def __init__(self, **kwargs):
         """Load settings, prepare paths and get talks"""
 

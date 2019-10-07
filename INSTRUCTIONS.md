@@ -5,8 +5,23 @@ This doc explains how to interact with the Sched.com talks export process to rec
 
 ## How to (re)process it
 
-Define the Sched.com `api_key` as `SCHED_API_KEY` var (or export it)
+Just get your sched.com API key and execute it:
 
 ```sh
-SCHED_API_KEY=XXXXXXXXXXXXX python sched_talks.py
+python sched_talks.py -o files -t $SCHED_API_KEY
+```
+
+## Help
+
+```
+$ python sched_talks.py --help
+Usage: sched_talks.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -o DIR, --output-dir=DIR
+                        attachments output directory
+  -t TOKEN, --token=TOKEN
+                        sched.com API key/token
+
 ```

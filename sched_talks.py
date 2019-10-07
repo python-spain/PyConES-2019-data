@@ -65,7 +65,7 @@ class SchedTalks(object):
             
             talks_content += talk_md + '\n'
         
-        talks_content += f"\n_Automatically created with :hearts: at {datetime.now().strftime('%Y/%m/%d %H:%m')}_"
+        talks_content += f"\n_Automatically created with :hearts: at {datetime.now().strftime('%Y/%m/%d %H:%M')}_"
         return talks_content
      
     @property
@@ -123,11 +123,11 @@ class SchedTalks(object):
                 f'{slugify(cleaned_file_name)}{file_extension}',
             )
 
-            # get_response = requests.get(file_url, stream=True)
-            # with open(file_path_local, 'wb') as f:
-            #     for chunk in get_response.iter_content(chunk_size=1024):
-            #         if chunk:
-            #             f.write(chunk)
+            get_response = requests.get(file_url, stream=True)
+            with open(file_path_local, 'wb') as f:
+                for chunk in get_response.iter_content(chunk_size=1024):
+                    if chunk:
+                        f.write(chunk)
 
             result.append({
                 'file_url': file_url,

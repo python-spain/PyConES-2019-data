@@ -2,6 +2,7 @@ import os
 import json
 import requests
 from tqdm import tqdm
+from slugify import slugify
 
 class SchedTalks(object):
     __slots__ = ['json', 'talks', 'settings']
@@ -96,10 +97,13 @@ class SchedTalks(object):
             file_url = attachment.get('path')
             file_name = attachment.get('name')
 
+            # Clean file name with slugify strategy
+            cleaned_file_name, file_extension = os.path.splitext(file_name)
             file_path_local = os.path.join(
                 destination_path or self.output_dir,
-                file_name
+                f'{slugify(cleaned_file_name)}{file_extension}',
             )
+
             get_response = requests.get(file_url, stream=True)
             with open(file_path_local, 'wb') as f:
                 for chunk in get_response.iter_content(chunk_size=1024):

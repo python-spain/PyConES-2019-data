@@ -11,6 +11,7 @@ class SchedTalks(object):
 
         self.settings = {
             'output_dir': 'files',
+            'api_key': os.environ.get('SCHED_API_KEY', os.environ.get('SCHED_KEY')),
             **kwargs,
         }
 
@@ -59,10 +60,22 @@ class SchedTalks(object):
     def output_dir(self):
         return self.settings.get('output_dir')
 
+    @property
+    def api_key(self):
+        return self.settings.get('api_key')
+
     def _get_talks(self):
         """Load talks file and process it downloading associated files"""
-        with open('talks.json') as f:
-            self.json = json.load(f)
+
+        talks_response = requests.get(
+            f'https://pycones19.sched.com/api/session/export?api_key={self.api_key}&format=json&strip_html=Y&fields=id,files,name,speakers,event_start'
+        )
+
+        if talks_response:
+            try:
+                self.json = json.loads(talks_response.content)
+            except:
+                raise Exception(f"Sched Talks can't be correctly retrieved: '{talks_response.content}")
 
         for talk in tqdm(self.json, desc='Processing talks'):
             # Process attachments
@@ -82,9 +95,6 @@ class SchedTalks(object):
         for attachment in attachments:
             file_url = attachment.get('path')
             file_name = attachment.get('name')
-
-            if not file_name:
-                import pudb; pu.db
 
             file_path_local = os.path.join(
                 destination_path or self.output_dir,

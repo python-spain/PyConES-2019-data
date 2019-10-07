@@ -72,7 +72,10 @@ class SchedTalks(object):
         )
 
         if talks_response:
-            self.json = json.loads(talks_response.content)
+            try:
+                self.json = json.loads(talks_response.content)
+            except:
+                raise Exception(f"Sched Talks can't be correctly retrieved: '{talks_response.content}")
 
         for talk in tqdm(self.json, desc='Processing talks'):
             # Process attachments

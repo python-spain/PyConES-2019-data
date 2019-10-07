@@ -60,6 +60,10 @@ class SchedTalks(object):
     def output_dir(self):
         return self.settings.get('output_dir')
 
+    @property
+    def api_key(self):
+        return self.settings.get('api_key')
+
     def _get_talks(self):
         """Load talks file and process it downloading associated files"""
         with open('talks.json') as f:

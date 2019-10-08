@@ -210,9 +210,11 @@ It contains all available talks, their attachments and other interesting informa
     - :paperclip: [PyConES19 Usando Flask en el mundo real.pdf](files/usando-flask-en-el-mundo-real-extensiones-y-buenas-practicas/pycones19-usando-flask-en-el-mundo-real.pdf)
   - :link: [More info](https://pycones19.sched.com/event/07eb2b5b7415900f7d69fc50649072dc)
 ### assertTrue('Testing en Machine Learning')
-  - :snake: _Beatriz Gómez_
+  - :snake: _BEATRIZ GOMEZ AYLLON_
   - :alarm_clock:  2019-10-05 16:10
   - :clipboard:  Todos hemos visto muchas charlas sobre herramientas y metodología de testing en ingeniería del software, pero ¿cómo encajamos esto en el pipeline de un proyecto de data science? En esta charla veremos distintas pruebas y buenas prácticas que podemos aplicar en distintas etapas de nuestro workflow.
+  - :open_file_folder: Attachments
+    - :paperclip: [assertTrue(‘Testing en Machine Learning’).pdf](files/asserttrue-testing-en-machine-learning/asserttrue-testing-en-machine-learning.pdf)
   - :link: [More info](https://pycones19.sched.com/event/37b2c7328b8516576eba750c442a9974)
 ### Porque una imagen vale más que mil datos. El poder de los gráficos en Python
   - :snake: _María Ángeles Rodriguez_
@@ -312,6 +314,8 @@ It contains all available talks, their attachments and other interesting informa
   - :snake: _Jimena Escobar Bermúdez_
   - :alarm_clock:  2019-10-06 10:30
   - :clipboard:  Antes todo era paz, teníamos una única pieza de metal y todo ocurría en el mismo sitio, pero los días han cambiado. Las aplicaciones se despliegan en la nube y la cantidad de servidores y la variedad de servicios sólo va en aumento. Tenemos una base de datos para series temporales, otra relacional, por supuesto una no relacional y además un sistema de almacenamiento de ficheros en la nube.Nos llegan notificaciones por doquier y que algo falle implica comenzar una especie de Scape Room en el que vamos de pista en pista hasta descubrir el origen.¿Cómo podemos enfrentarnos a monitorizar un sistema heterogéneo?Nuestra motivación es clara: Monitorizar nos permite obtener datos y los datos son la base del negocio.En esta charla os contaré la importancia de medir y cómo hacerlo, cómo monitorizar y qué monitorizar, cómo enfrentarse a un sistema heterogéneo y que herramientas y buenas prácticas tenemos de nuestro lado. Y, por supuesto, todo sobre Python.
+  - :open_file_folder: Attachments
+    - :paperclip: [El show de Truman.pdf](files/el-show-de-truman/el-show-de-truman.pdf)
   - :link: [More info](https://pycones19.sched.com/event/c1d55e81904f8b6d7edc0890d07bc391)
 ### Procesamiento distribuido con Dask para posicionamiento indoor
   - :snake: _Álvaro Arredondo, cayetano benavent, Josema Camacho_
@@ -346,6 +350,7 @@ It contains all available talks, their attachments and other interesting informa
   - :clipboard:  En esta charla contaré nuestra experiencia con los principales frameworks serverless basados en Kubernetes.Veremos estado de madures, problemas comunes, y las características destacadas de cada uno.
   - :open_file_folder: Attachments
     - :paperclip: [Serverless Frameworks for Kubernetes.pdf](files/4-frameworks-serverless-para-kubernetes-patrocinada/serverless-frameworks-for-kubernetes.pdf)
+    - :paperclip: [transcripcion.zip](files/4-frameworks-serverless-para-kubernetes-patrocinada/transcripcion.zip)
   - :link: [More info](https://pycones19.sched.com/event/452680a5df7397610e38f350fd756918)
 ### Deeplearneando con Python con casos de uso de biometría - Patrocinada
   - :snake: _Alvaro Romero Diaz, Javier Blanco Cordero, ORANGE_
@@ -399,7 +404,9 @@ It contains all available talks, their attachments and other interesting informa
 ### Extendiendo Django para que se conecte a otras Bases de Datos: escribe tu propio backend
   - :snake: _Javier Abadia_
   - :alarm_clock:  2019-10-06 11:50
-  - :clipboard:  Django permite acceder – mediante su ORM – a distintas bases de datos. De serie, Django soporta PostgreSQL, MySQL, SQLite, Oracle y existen “backends” (es decir drivers) no oficiales para IBM DB2, Microsoft SQL Server , Firebird y bases de datos ODBC.Pero... ¿qué pasa si nuestros datos están en una base de datos para la que no existe – todavía – un backend? ¿cómo de fácil o difícil es escribir nuestro propio backend para esa base de datos?En esta charla compartiremos nuestra experiencia escribiendo un backend para una base de datos analítica (EXASol DB): ¿cómo lo hemos hecho? ¿qué documentación o referencias hay disponibles? ¿cómo nos aseguramos de que el acceso a los datos es correcto?
+  - :clipboard:  Django permite acceder – mediante su ORM – a distintas bases de datos. De serie, Django soporta PostgreSQL, MySQL, SQLite, Oracle y existen “backends” (es decir drivers) no oficiales para IBM DB2, Microsoft SQL Server , Firebird y bases de datos ODBC.Pero... ¿qué pasa si nuestros datos están en una base de datos para la que no existe – todavía – un backend? ¿cómo de fácil o difícil es escribir nuestro propio backend para esa base de datos?En esta charla compartiremos nuestra experiencia escribiendo un backend para una base de datos analítica (EXASol DB): ¿cómo lo hemos hecho? ¿qué documentación o referencias hay disponibles? ¿cómo nos aseguramos de que el acceso a los datos es correcto?Slides aquí: https://www.slideshare.net/JavierAbada/extendiendo-django-cmo-escribir-tu-propio-backend-de-base-de-datos-exasol
+  - :open_file_folder: Attachments
+    - :paperclip: [JAVIER ABADIA - Escribiendo tu propio backend de BBDD.pptx.zip](files/extendiendo-django-para-que-se-conecte-a-otras-bases-de-datos-escribe-tu-propio-backend/javier-abadia-escribiendo-tu-propio-backend-de-bbdd-pptx.zip)
   - :link: [More info](https://pycones19.sched.com/event/54dd0c7c729422d1c3d6e37303f4de2a)
 ### PyExp: A queue multiproccessing manager for experiments
   - :snake: _Carlos Perales-González_
@@ -422,4 +429,4 @@ It contains all available talks, their attachments and other interesting informa
   - :alarm_clock:  2019-10-06 16:30
   - :link: [More info](https://pycones19.sched.com/event/f95b7a9e6325214b5e6a07369ed99da0)
 
-_Automatically created with :hearts: at 2019/10/07 16:53_
+_Automatically created with :hearts: at 2019/10/08 11:26_

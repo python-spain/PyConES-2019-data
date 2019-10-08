@@ -6,11 +6,13 @@ from tqdm import tqdm
 from slugify import slugify
 from optparse import OptionParser
 
+
 def _mkdir(dir):
     try:
         os.mkdir(dir)
     except FileExistsError:
         pass
+
 
 class SchedTalks(object):
     __slots__ = ['json', 'talks', 'settings']
@@ -72,7 +74,12 @@ class SchedTalks(object):
             talk_md += f"  - :link: [More info](https://pycones19.sched.com/event/{talk.get('id')})"
             
             talks_content += talk_md + '\n'
-        
+
+        # plug the lighting talks here
+        lt_content = self._get_lighting_talks_content()
+        if lt_content:
+            talks_content += '\n{}'.format(lt_content)
+
         talks_content += f"\n_Automatically created with :hearts: at {datetime.now().strftime('%Y/%m/%d %H:%M')}_"
         return talks_content
      
@@ -150,6 +157,16 @@ class SchedTalks(object):
 
         with open(file_name, "w") as readme:
             readme.write(self.as_md)
+
+    @staticmethod
+    def _get_lighting_talks_content():
+        """get the lightning talks content from the lightning_talks.md file"""
+        try:
+            with open('lightning_talks.md') as f:
+                content = f.read()
+        except Exception:
+            content = ''
+        return content
 
 
 if __name__ == "__main__":

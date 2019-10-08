@@ -120,6 +120,8 @@ It contains all available talks, their attachments and other interesting informa
   - :snake: _Alberto Fernandez Valiente_
   - :alarm_clock:  2019-10-05 12:50
   - :clipboard:  Cada vez usamos más aplicaciones web de tipo SPA (Single Page Application), permiten una experiencia de usuario más fluida evitando generar HTML en servidor. Estas aplicaciones se apoyan en APIs cuyo desarrollo puede simplificarse y acelerarse mediante el empleo de microservicios que nos permitirán separar los diferentes endpoints de la aplicación en diferentes conjuntos relacionados según su funcionalidad. El módulo asyncio, disponible desde Python 3.4, nos permite un enfoque a la ejecución de código concurrente sin los problemas asociados a los hilos y el temido GIL. El uso de corrutinas permite una lógica lineal en nuestro código pero aprovechando los momentos en los que se realizan operaciones de IO para ejecutar otras cargas de trabajo. Hay muchos framework que aprovechan este modelo de ejecución asíncrona y para esta charla vamos a utilizar Starlette. Este toolkit es muy ligero y potente, con una interfaz de uso inspirada en Flask que hace muy fácil empezar a usarlo y tener nuestros propios microservicios en funcionamiento en pocotiempo.
+  - :open_file_folder: Attachments
+    - :paperclip: [Microservicios altamente paralelos para todos.pdf](files/microservicios-altamente-paralelos-para-todos/microservicios-altamente-paralelos-para-todos.pdf)
   - :link: [More info](https://pycones19.sched.com/event/488baafbc10266d5da935392cf5ab0de)
 ### qVista: sistema de información territorial del Ayto. de BCN desarrollado en PyQGis
   - :snake: _Jordi Cebrian, Noemi Rodríguez_
@@ -429,4 +431,20 @@ It contains all available talks, their attachments and other interesting informa
   - :alarm_clock:  2019-10-06 16:30
   - :link: [More info](https://pycones19.sched.com/event/f95b7a9e6325214b5e6a07369ed99da0)
 
-_Automatically created with :hearts: at 2019/10/08 11:26_
+## Ligthing Talks
+### Pytest - testing tips and useful plugins
+  - :snake: _Andreu Vallbona_
+  - :alarm_clock:  2019-10-04 18:30
+  - :clipboard: tips and useful plugins for pytest  
+  - :link: [More info](https://www.slideshare.net/AndreuVallbonaPlazas/pytest-testing-tips-and-useful-plugins)
+  
+### Localhost to the internet
+  - :snake: _Andreu Vallbona_
+  - :alarm_clock:  2019-10-06 15:00
+  - :clipboard: Exposing the developer computer to the internet  
+  - :link: [More info](https://www.slideshare.net/AndreuVallbonaPlazas/localhost-to-the-internet)
+  
+  
+  
+  
+_Automatically created with :hearts: at 2019/10/08 21:54_

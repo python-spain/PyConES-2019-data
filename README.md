@@ -431,7 +431,9 @@ It contains all available talks, their attachments and other interesting informa
   - :alarm_clock:  2019-10-06 16:30
   - :link: [More info](https://pycones19.sched.com/event/f95b7a9e6325214b5e6a07369ed99da0)
 
+
 ## Ligthing Talks
+
 ### Pytest - testing tips and useful plugins
   - :snake: _Andreu Vallbona_
   - :alarm_clock:  2019-10-04 18:30
@@ -444,7 +446,5 @@ It contains all available talks, their attachments and other interesting informa
   - :clipboard: Exposing the developer computer to the internet  
   - :link: [More info](https://www.slideshare.net/AndreuVallbonaPlazas/localhost-to-the-internet)
   
-  
-  
-  
-_Automatically created with :hearts: at 2019/10/08 21:54_
+ 
+_Automatically created with :hearts: at 2019/10/09 09:57_

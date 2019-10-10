@@ -95,9 +95,12 @@ It contains all available talks, their attachments and other interesting informa
   - :clipboard:  Descripción del proceso de creación de una película de animación y cómo usamos herramientas propias desarrolladas en Python en él.
   - :link: [More info](https://pycones19.sched.com/event/4675706859a2e85cda0150e5b091c0c3)
 ### Drivers en Python o cómo encender luces de colores en un teclado cuando recibo un mail
-  - :snake: _Javier Torres_
+  - :snake: _Javier Torres Niño_
   - :alarm_clock:  2019-10-05 12:10
-  - :clipboard:  Puede parecer que escribir drivers es un dominio específico para lenguajes como C pero lo cierto es que no siempre tiene porque ser así. En esta charla presentaré un driver para controlar la retroiluminación de un teclado Ducky One 2 hecho en Python. La elección de Python hace mucho más fácil la integración con otras aplicaciones como, por ejemplo, para iluminar ciertas zonas del teclado cuando se reciben emails.No sólo nos quedaremos en el driver en sí. Como paso previo, y dado que el protocolo no está publicamente documentado, haremos un poco de ingeniería inversa para comprender qué idioma habla el teclado con losdrivers oficiales. Y otra vez Python viene al rescate con su facilidad para el análisis de datos.¿Por qué todo esto? En primer lugar porque, como usuario de Linux, sufro mucho cuando compro hardware que sólo tiene drivers para Windows. Y en segundo lugar, pretendo desmitificar el mundo de la escritura decontroladores: realmente es mucho más fácil de lo que pueda parecer.
+  - :clipboard:  Puede parecer que escribir drivers es un dominio específico para lenguajes como C pero lo cierto es que no siempre tiene porque ser así. En esta charla presentaré un driver para controlar la retroiluminación de un teclado Ducky One 2 hecho en Python. La elección de Python hace mucho más fácil la integración con otras aplicaciones como, por ejemplo, para iluminar ciertas zonas del teclado cuando se reciben emails.No sólo nos quedaremos en el driver en sí. Como paso previo, y dado que el protocolo no está publicamente documentado, haremos un poco de ingeniería inversa para comprender qué idioma habla el teclado con losdrivers oficiales. Y otra vez Python viene al rescate con su facilidad para el análisis de datos.¿Por qué todo esto? En primer lugar porque, como usuario de Linux, sufro mucho cuando compro hardware que sólo tiene drivers para Windows. Y en segundo lugar, pretendo desmitificar el mundo de la escritura decontroladores: realmente es mucho más fácil de lo que pueda parecer.Repositorio de la charla: https://github.com/javitonino/duckylights
+  - :open_file_folder: Attachments
+    - :paperclip: [Slides.zip](files/drivers-en-python-o-como-encender-luces-de-colores-en-un-teclado-cuando-recibo-un-mail/slides.zip)
+    - :paperclip: [Ducky Protocol Analysis.ipynb](files/drivers-en-python-o-como-encender-luces-de-colores-en-un-teclado-cuando-recibo-un-mail/ducky-protocol-analysis.ipynb)
   - :link: [More info](https://pycones19.sched.com/event/93d1469d1907c6401bec36ff820b8869)
 ### Service Oriented Arquitecture with PySOA
   - :snake: _Jorge Barata_
@@ -345,6 +348,9 @@ It contains all available talks, their attachments and other interesting informa
   - :snake: _Adeshola Afolabi_
   - :alarm_clock:  2019-10-06 11:10
   - :clipboard:  Having a team of two interrogators who adopt different strategies to a subject matter is a good cop/bad cop approach to solving some criminal cases. Here, our case is not criminal. We want to solve the problem of selling products to people bearing in mind that the users choice is subjective.There has been a major disruption in how advertising is being done recently. The typical radio jingle, newspaper adverts and television commercials are gradually becoming redundant. Brands want their products displayed on webpages, mobile applications and other intelligent platforms. This diversion from the more conventional forms of marketing has led to major successes in sales as well as brand loyalty and recognition. On the other hand, users get spammed and sometimes even irritated by the volume of display advertisements exposed to them.What then is the solution? Users would be more interested in products (good or bad) if they met their needs. In this talk, we would run a simple A/B test where different variations of products are tested and extremely small improvements are being estimated. We would also take it a step further by discussing the basics of a click prediction engine and lookalike modeling.
+  - :open_file_folder: Attachments
+    - :paperclip: [Simple A_B Test.pdf](files/pyrescue-how-we-used-a-b-testing-to-make-advertising-precise-in-nigeria/simple-a-b-test.pdf)
+    - :paperclip: [AB_Testing_MLmodels.html](files/pyrescue-how-we-used-a-b-testing-to-make-advertising-precise-in-nigeria/ab-testing-mlmodels.html)
   - :link: [More info](https://pycones19.sched.com/event/f10feb4e900835a6b4d9d52ef32b091a)
 ### 4 Frameworks Serverless para Kubernetes - Patrocinada
   - :snake: _Gustavo Marin, INTELLYGENZ_
@@ -431,9 +437,7 @@ It contains all available talks, their attachments and other interesting informa
   - :alarm_clock:  2019-10-06 16:30
   - :link: [More info](https://pycones19.sched.com/event/f95b7a9e6325214b5e6a07369ed99da0)
 
-
 ## Ligthing Talks
-
 ### Pytest - testing tips and useful plugins
   - :snake: _Andreu Vallbona_
   - :alarm_clock:  2019-10-04 18:30
@@ -446,5 +450,7 @@ It contains all available talks, their attachments and other interesting informa
   - :clipboard: Exposing the developer computer to the internet  
   - :link: [More info](https://www.slideshare.net/AndreuVallbonaPlazas/localhost-to-the-internet)
   
- 
-_Automatically created with :hearts: at 2019/10/09 09:57_
+  
+  
+  
+_Automatically created with :hearts: at 2019/10/10 18:33_

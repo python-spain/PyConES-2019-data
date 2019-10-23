@@ -366,16 +366,18 @@ It contains all available talks, their attachments and other interesting informa
   - :clipboard:  En esta charla intentaremos introduciros al Deep Learning, uno de los campos más prometedores e interesantes de la Inteligencia Artificial.Empezaremos de cero, explicando sus orígenes como un intento de replicar el funcionamiento del cerebro.Luego os contaremos cómo generar estos modelos con Python, en concreto con dos de las librerías más populares para Deep Learning: Keras y PyTorch, incluyendo un par de ejemplos curiosos para acabar de entender qué hacen y cómo funcionan las redes neuronales.Finalmente, os enseñaremos una aplicación más en detalle: simularemos un sistema biométrico de identificación de personas a través de su firma utilizando un chatbot de Telegram.Os esperamos!
   - :link: [More info](https://pycones19.sched.com/event/5c6b02adc7419816fc74b41f0305e8eb)
 ### Ofuscación de ficheros con esteganografía
-  - :snake: _Diego Silveira Madrid, Gonzalo López Valero_
+  - :snake: _Diego Silveira, Gonzalo López Valero_
   - :alarm_clock:  2019-10-06 11:30
   - :clipboard:  Con la esteganografía sabemos que existen técnicas con las que podemos inyectar texto en imágenes. Si al fin y al cabo lo que ofuscamos en las imágenes son cadenas, bits, ceros o unos, y todo lo que hay dentro de un ordenador se compone de ceros y unos, ¿por qué no inyectar archivos dentro de las imágenes? Nuestro proyecto consiste en inyectar distintos tipos de ficheros, tales como PDF, MP4, etc., en imágenes con diferentes técnicas de esteganografía. Con estos algoritmos que hemos desarrollado, obtenemos una nueva forma de poder cifrar ficheros. Además, si antes de inyectar dichos archivos los ciframos con AES-128 y le añadimos una firma digital, podremos fortificar nuestro cifrado y en el caso de haber sido modificado por una tercera persona, podremos saberlo gracias a la firma digital añadida.
+  - :open_file_folder: Attachments
+    - :paperclip: [Esteganografía.pptx](files/ofuscacion-de-ficheros-con-esteganografia/esteganografia.pptx)
   - :link: [More info](https://pycones19.sched.com/event/faad3a1483ffede4f187493b2b4d1729)
 ### Introducción al testeo con Mocks
   - :snake: _Ester Ramos Carmona_
   - :alarm_clock:  2019-10-06 11:30
   - :clipboard:  ¿Estás intentando testear tu función pero tienes mil dependecias y además tu test le acaba de mandar un email a tu abuela que pone ‘Testy McTestFace’? ¡No busques más! Gracias a la nueva tecnología de unittest.mockTM podrás testear todas tus funciones de manera sencilla, segura y sin miedo a que te echen del trabajo por spamear el chat del equipo. Con esta charla aprenderás cómo evitar efectos secundarios en tus tests, refactorizar tu función para hacer inyección de dependencias y, si esto no es posible, aprenderás a crear parches para que sólo tengas que testear las partes lógicas de tu función que de verdad te interesan.
   - :open_file_folder: Attachments
-    - :paperclip: [Testing with Mocks (2).pdf](files/introduccion-al-testeo-con-mocks/testing-with-mocks-2.pdf)
+    - :paperclip: [Testing with Mocks.pdf](files/introduccion-al-testeo-con-mocks/testing-with-mocks.pdf)
   - :link: [More info](https://pycones19.sched.com/event/23b81de8030378fee1000cbd742ba8cd)
 ### Data Science for Lazy People, Automated Machine Learning - Patrocinada
   - :snake: _Juan Diego Hueltes Vega, RAVENPACK_
@@ -453,4 +455,4 @@ It contains all available talks, their attachments and other interesting informa
   
   
   
-_Automatically created with :hearts: at 2019/10/10 18:33_
+_Automatically created with :hearts: at 2019/10/23 14:11_

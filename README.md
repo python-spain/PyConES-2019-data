@@ -290,6 +290,8 @@ It contains all available talks, their attachments and other interesting informa
   - :snake: _Miguel Gonzalez Flores_
   - :alarm_clock:  2019-10-05 17:10
   - :clipboard:  Vamos a resaltar los valores de hacer código limpio, seguir buenas prácticas, diseño simple, refactorización de código y todo desde un punto de visto de la economía del software. Se hará mucho foco en el código legacy y como conseguir que esto no arrastre al fracaso nuestros proyectos
+  - :open_file_folder: Attachments
+    - :paperclip: [Software economics.pdf](files/economia-del-software/software-economics.pdf)
   - :link: [More info](https://pycones19.sched.com/event/a7eb16ca3e8fcfc79484257e05dc74ff)
 ### Keynote
   - :snake: _Francisco Javier Ordóñez Morales_
@@ -455,4 +457,4 @@ It contains all available talks, their attachments and other interesting informa
   
   
   
-_Automatically created with :hearts: at 2019/10/23 14:11_
+_Automatically created with :hearts: at 2019/10/30 10:59_

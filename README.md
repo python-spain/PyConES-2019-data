@@ -306,6 +306,8 @@ It contains all available talks, their attachments and other interesting informa
   - :snake: _Jose Manuel Ortega Candel_
   - :alarm_clock:  2019-10-06 10:30
   - :clipboard:  En los últimos años, muchas de las soluciones de seguridad están utilizando el aprendizaje automático para detectar y prevenir las principales amenazas como malware o detección de anomalías en las redes. El objetivo de los algoritmos de machine learning es construir modelos que permitan predecir con la mayor precisión posible si ante nuevas entradas de datos, nuestro algoritmo va a ser capaz de predecir si se tratade malware o se ha detectado un comportamiento anómalo. Para ello disponemos varios tipos de modelos como regresión, clasificación, agrupación en clústeres, árboles de decisión, entre otros.En esta charla explicaré los conceptos principales sobre el aprendizaje automático aplicado a la ciberseguridad a través de diferentes casos de uso y ejemplos. Comenzaremos explicando los algoritmos principales que podemos usar para hacer nuestras predicciones, aplicando estos conceptos en el campo de la seguridad. Se comentarán ejemplos que permitirán evaluar las mejores técnicas de aprendizajeautomático en función del problema de seguridad que se plantea.
+  - :open_file_folder: Attachments
+    - :paperclip: [Machine Learning para proyectos de seguridad.pdf](files/machine-learning-para-proyectos-de-seguridad/machine-learning-para-proyectos-de-seguridad.pdf)
   - :link: [More info](https://pycones19.sched.com/event/ccd5e8e06a2c229b5d89daccd06b1e88)
 ### End-to-end machine learning platform for real-time underwriting. A silicon Valley fintech perspective
   - :snake: _Hossein Ghodrati, Pablo López, Pablo Vargas_
@@ -457,4 +459,4 @@ It contains all available talks, their attachments and other interesting informa
   
   
   
-_Automatically created with :hearts: at 2019/10/30 10:59_
+_Automatically created with :hearts: at 2019/11/04 14:55_
